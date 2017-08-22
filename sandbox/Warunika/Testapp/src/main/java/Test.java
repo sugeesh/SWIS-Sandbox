@@ -3,6 +3,7 @@ import com.besaba.revonline.pastebinapi.impl.factory.PastebinFactory;
 import com.besaba.revonline.pastebinapi.paste.Paste;
 import com.besaba.revonline.pastebinapi.response.Response;
 
+
 import java.util.List;
 
 /**
@@ -24,10 +25,11 @@ public class Test {
                 System.out.println("Unable to read paste content!");
                 return;
             }
-            System.out.println("Paste title: " + paste.getTitle());
-            System.out.println("Paste key: " +paste.getKey());
-            System.out.println(pasteResponse.get());
-//            m1(paste.getKey());
+//            System.out.println("Paste title: " + paste.getTitle());
+//            System.out.println("Paste key: " +paste.getKey());
+//            System.out.println(pasteResponse.get());
+            m1(paste.getKey());
+            System.out.println(paste.getKey());
 
         }
 
@@ -42,6 +44,6 @@ public class Test {
             System.out.println("Unable to read paste content!");
             return;
         }
-        System.out.println(pasteResponse.get());
+        System.out.println("Result :"+pasteResponse.get());
     }
 }
